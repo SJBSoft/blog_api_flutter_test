@@ -1,8 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.blog.api.blog_flutter">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="blog_flutter"
         android:name="${applicationName}"
+       android:usesCleartextTraffic="true"
+       android:requestLegacyExternalStorage="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
